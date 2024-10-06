@@ -1,0 +1,154 @@
+.container-zapis {
+  background-color: transparent;
+  padding: 0 3px;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-zapis {
+  max-width: 500px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 350px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  align-items: center;
+}
+
+.zapis-cont {
+  padding: 0 50px;
+}
+
+.zapis-a-teg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-align: start;
+}
+.zapis-a-teg h2 {
+  color: white;
+}
+.modal-zapis h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.modal-zapis p {
+  max-width: 400px;
+  width: 100%;
+  text-transform: none;
+  margin: auto;
+  text-align: start;
+  align-items: start;
+  font-size: 15px;
+  padding-top: 15px;
+  font-weight: 200;
+}
+
+.form-zapis {
+  width: 100%;
+}
+
+.input-zapis {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid white;
+  margin-top: 15px;
+}
+
+.input-zapis::placeholder {
+  color: white;
+}
+
+.zapis-btn {
+  width: 100%;
+  margin-top: 10px;
+  height: 48px;
+  background-color: #3281ac;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.zapis-btn-container {
+  width: 100%;
+  text-align: end;
+}
+
+.zapis-btnn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all ease 0.3s;
+}
+
+.zapis-btnn:hover {
+  color: #3281ac;
+  scale: 1.28;
+  transition: all ease 0.3s;
+}
+
+.zapis-a-teg {
+  width: 100%;
+}
+
+.zapis-a-teg a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #3281ac;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.zapis-a-teg a h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.zapis-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  color: white;
+  text-transform: none;
+  text-align: start;
+}
+.zapis-around {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+@media (max-width: 400px) {
+  .zapis-cont {
+    padding: 0;
+  }
+}

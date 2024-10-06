@@ -1,0 +1,121 @@
+.container-cbroc {
+  background-color: transparent;
+  padding: 0 3px;
+  width: 100%;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal-cbroc {
+  max-width: 500px;
+  width: 100%;
+  background-color: #000;
+  border-radius: 8px;
+  padding: 20px;
+  min-height: 350px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+  align-items: center;
+}
+.cbroc-a-teg {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.cbroc-a-teg h2 {
+  text-align: start;
+  color: white;
+}
+.modal-cbroc h2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  color: white;
+  padding-top: 10px;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.modal-cbroc p {
+  max-width: 400px;
+  width: 100%;
+  text-transform: none;
+  margin: auto;
+  text-align: start;
+  align-items: start;
+  font-size: 15px;
+  padding-top: 15px;
+  font-weight: 200;
+}
+
+.form-cbroc {
+  width: 100%;
+}
+
+.input-cbroc {
+  width: 100%;
+  background-color: #32353c;
+  padding: 10px;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid #32353c;
+  margin-top: 15px;
+}
+
+.cbroc-btn {
+  width: 100%;
+  margin-top: 10px;
+  height: 48px;
+  background-color: #3281ac;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+
+.cbroc-btn-container {
+  width: 100%;
+  text-align: end;
+}
+
+.cbroc-btnn {
+  border: none;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 25px;
+  transition: all ease 0.3s;
+}
+
+.cbroc-btnn:hover {
+  color: #3281ac;
+  scale: 1.28;
+  transition: all ease 0.3s;
+}
+
+.cbroc-a-teg {
+  width: 100%;
+}
+
+.cbroc-a-teg a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  background-color: #3281ac;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.cbroc-a-teg a h2 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
