@@ -17,6 +17,8 @@ import message_po from '../../../locales/po.json';
 import message_ptbr from '../../../locales/ptbr.json';
 import message_ru from '../../../locales/ru.json';
 import Modal from '../Modal/Modal';
+import BurgerMenu from '../burder-menu/burger-menu';
+import Lang from '../lang/lang';
 
 const messages = {
   en: messages_en,
@@ -49,6 +51,8 @@ function Navbar() {
   const notify = () => toast(<FormattedMessage id="toast" />);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [burgerMenu, setBurgerMenu] = useState(false);
+  const [lang, setLang] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
@@ -58,13 +62,23 @@ function Navbar() {
       <header className="header" id="header">
         <div className="header-top">
           {/* burger menu */}
-          <div className="burger-menu">
+          <div
+            onClick={() => setBurgerMenu(!burgerMenu)}
+            className="burger-menu"
+          >
             <div class="menu-toggle" id="bars">
               <div></div>
               <div></div>
               <div></div>
             </div>
           </div>
+          {/* burgee menu */}
+          {burgerMenu && (
+            <BurgerMenu
+              setIsModalOpen={setIsModalOpen}
+              setBurgerMenu={setBurgerMenu}
+            />
+          )}
 
           <a href="#" className="header-top__logo">
             <img
@@ -220,12 +234,18 @@ function Navbar() {
           </div>
 
           {/* ru eng */}
-          <div className="language-container">
+          <div
+            onClick={() => setLang(!lang)}
+            style={{ cursor: 'pointer' }}
+            className="language-container"
+          >
             <div style={{ display: 'flex' }} class="down">
               <p id="changes">ru</p>
               <i class="fa fa-caret-down"></i>
             </div>
           </div>
+
+          {lang && <Lang setLang={setLang} />}
         </div>
         <div className="header__content" id="headerLogo">
           <img
